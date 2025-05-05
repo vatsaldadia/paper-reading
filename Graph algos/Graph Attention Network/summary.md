@@ -2,18 +2,15 @@
 
 # 🧠 Research Paper Summary Template (with Checkpoints)
 
-> ⚠️ Don't try to fill it all in one go. Treat it like a staged breakdown — move through sections as you read.
-
 ---
 
 ## 📄 0. Paper Info (Fill this in *before reading*)
-- **Title**:  
-- **Authors**:  
-- **Year**:  
-- **Conference/Journal**:  
-- **Link to paper**: [Paste link here]  
-- **Link to code (if any)**:  
-- **Read date**:  
+- **Title**:  GRAPH ATTENTION NETWORKS
+- **Authors**:  Petar Velickovic, et. al.
+- **Year**:  2018
+- **Conference/Journal**:  ICLR
+- **Link to paper**: https://doi.org/10.48550/arXiv.1710.10903  
+- **Read date**:  May 5, 2025
 
 ---
 
