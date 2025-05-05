@@ -4,7 +4,7 @@
 
 ---
 
-## 📄 0. Paper Info (Fill this in *before reading*)
+## 📄 0. Paper Info
 - **Title**:  GRAPH ATTENTION NETWORKS
 - **Authors**:  Petar Velickovic, et. al.
 - **Year**:  2018
@@ -15,7 +15,7 @@
 
 ---
 
-## 🚀 1. What’s the Point? (Fill this after *reading Abstract + Introduction*)
+## 🚀 1. What’s the Point?
 **What problem does this paper solve, and why is it important?**  
 This paper introduces an attention mechanism to GNNs, which generalises the use of RNNs in context to graphs. Attention allows the model to adapt to a graph with a different structure from the one it was trained on.
 
