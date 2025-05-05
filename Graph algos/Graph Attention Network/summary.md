@@ -21,9 +21,9 @@ This paper introduces an attention mechanism to GNNs, which generalises the use 
 
 ---
 
-## 🧠 2. The Core Idea (Fill after *Methods or Model section skim*)  
+## 🧠 2. The Core Idea
 **What’s the main idea, approach, or innovation in one sentence?**  
-_(If you can’t explain it simply, go back and reread just the method section.)_
+Add a stack of self-attentaion layers on top on the graph network (or mutli-head for better stabilization)
 
 ---
 
