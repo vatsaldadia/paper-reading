@@ -9,14 +9,15 @@
 - **Authors**:  Petar Velickovic, et. al.
 - **Year**:  2018
 - **Conference/Journal**:  ICLR
-- **Link to paper**: https://doi.org/10.48550/arXiv.1710.10903  
+- **Link to paper**: https://doi.org/10.48550/arXiv.1710.10903
+- **Link to code**:  https://github.com/PetarV-/GAT
 - **Read date**:  May 5, 2025
 
 ---
 
 ## 🚀 1. What’s the Point? (Fill this after *reading Abstract + Introduction*)
 **What problem does this paper solve, and why is it important?**  
-_(Keep it tight — 2 to 3 sentences max. Don't just reword the abstract.)_
+This paper introduces an attention mechanism to GNNs, which generalises the use of RNNs in context to graphs. Attention allows the model to adapt to a graph with a different structure from the one it was trained on.
 
 ---
 
