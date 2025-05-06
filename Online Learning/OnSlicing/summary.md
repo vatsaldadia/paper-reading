@@ -21,9 +21,10 @@ The paper introduces a online drl solution to e2e (ran - tn - core - en) network
 
 ---
 
-## 🧠 2. The Core Idea (Fill after *Methods or Model section skim*)  
-**What’s the main idea, approach, or innovation in one sentence?**  
-_(If you can’t explain it simply, go back and reread just the method section.)_
+## 🧠 2. The Core Idea
+**What’s the main idea, approach, or innovation in one sentence?**
+
+The main idea is minimize the usage of virtual resources in all the layers while not violating the individual slice SLA.
 
 ---
 
