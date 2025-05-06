@@ -1,25 +1,23 @@
-
-
-# 🧠 Research Paper Summary Template (with Checkpoints)
-
-> ⚠️ Don't try to fill it all in one go. Treat it like a staged breakdown — move through sections as you read.
+# 🧠 Research Paper Summary Template
 
 ---
 
-## 📄 0. Paper Info (Fill this in *before reading*)
-- **Title**:  
-- **Authors**:  
-- **Year**:  
-- **Conference/Journal**:  
-- **Link to paper**: [Paste link here]  
-- **Link to code (if any)**:  
-- **Read date**:  
+## 📄 0. Paper Info
+- **Title**:  OnSlicing: Online End-to-End Network Slicing with Reinforcement Learning
+- **Authors**:  Q. Liu, et. al.
+- **Year**:  2021
+- **Conference/Journal**:  Conference on emerging Networking EXperiments and Technologies (CoNEXT)
+- **Link to paper**:  https://doi.org/10.48550/arXiv.2111.01616
+- **Read date**:  May 6, 2025
+
+> Initial thoughts: Too many things proposed, but are all novel? Seems a good approach, granular control over many things, will be interesting to see how is everything tied up. Results seem to good to be true.
 
 ---
 
-## 🚀 1. What’s the Point? (Fill this after *reading Abstract + Introduction*)
+## 🚀 1. What’s the Point?
 **What problem does this paper solve, and why is it important?**  
-_(Keep it tight — 2 to 3 sentences max. Don't just reword the abstract.)_
+
+The paper introduces a online drl solution to e2e (ran - tn - core - en) network slicing. Slicing allows operators to virtualize the physical insfrastruture to meet the QoS of different slices in 5G. Rule-based systems don't ensure maximum utilization, and offline learing methods fail to show results in real networks as they are often trained on simulations. Current online approaches fail to comply to SLA for all slices at all times specially at the start when they are still capturing context. The given solution handles all the given problems.
 
 ---
 
