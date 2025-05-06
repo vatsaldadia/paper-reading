@@ -1,4 +1,4 @@
-# 🧠 Research Paper Summary Template
+# 🧠 Research Paper Summary
 
 ---
 
