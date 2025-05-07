@@ -55,7 +55,7 @@ The main idea is minimize the usage of virtual resources in all the layers while
 
 ## ⚠️ 5. Limitations / Weaknesses
 - **What does it assume?**
-  <br>→ No particular assumptions given, but the testing architecture and traffic data rates are low
+  <br>→ No particular assumptions given, but the testing architecture is (very) small and traffic data rates are low
 - **Where does it break?**
   <br>→ It might break in a large network, while trying to handle multiple agents and scaling domain managers to multiple nodes. Too many policies involved can it lead to overfitting?
 - **What’s missing?**
