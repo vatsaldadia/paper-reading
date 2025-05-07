@@ -28,53 +28,43 @@ The main idea is minimize the usage of virtual resources in all the layers while
 
 ---
 
-## 🔬 3. Setup & Experiment Details (Fill after *Methods + Experiments section*)  
-- **Datasets used**:  
-- **Architecture / Algorithm**:  
-- **Training tricks / Hyperparameters (if given)**:  
-- **Evaluation metrics**:  
-
-> ✅ **Checkpoint:** Can you sketch the pipeline on paper or explain it out loud?
+## 🔬 3. Setup & Experiment Details
+- **Datasets used**:  Used hardware to create node in the network layers; and traffic traces [https://doi.org/10.1038/sdata.2015.55] for network traffic; custom applications emulating slices
+- **Architecture / Algorithm**:
+  - Onslice manager: virtualizes physical resources and performs the action for resource allocation
+  - Onslice orchestrator: consists of onslice agents (1 per slice) which allocate resources in the nodes
+      - Onslice agents are constraint-aware (SLA violations)
+      - Can switch to baseline (rule-based) when the predicted future cost will violate SLA, ensuring _no_ violations
+      - Modifies action in such a way allocate resource do not exceed the current capacity
+- **Training tricks / Hyperparameters (if given)**:
+  - Policy trained using behaviour cloning (offline from baseline) and PPO
+  - Small network architecture insspired from OpenAirInterface [https://openairinterface.org/]
+- **Evaluation metrics**:  Average resource utilization (%) and SLA violations(%)
 
 ---
 
-## 📊 4. Results (Fill after *Results section*)  
-- **How well did it perform? Compared to what?**  
-- **Any strong baselines beaten?**  
+## 📊 4. Results
+- **How well did it perform? Compared to what?**
+  <br>→ Was the best in both the metrics
+- **Any strong baselines beaten?**
+  <br>→ Particularly no, tweaked the popular OnRL [https://www.doi.org/10.1145/3372224.3419186] to fit the use case
 - **Was the improvement significant or just marginal?**
+  <br>→ The results in itself are pretty good and back the claims of the researchers
 
 ---
 
-## ⚠️ 5. Limitations / Weaknesses (Skim *Discussion or Conclusion*)  
-- **What does it assume?**  
-- **Where does it break?**  
+## ⚠️ 5. Limitations / Weaknesses
+- **What does it assume?**
+  <br>→ No particular assumptions given, but the testing architecture and traffic data rates are low
+- **Where does it break?**
+  <br>→ It might break in a large network, while trying to handle multiple agents and scaling domain managers to multiple nodes
 - **What’s missing?**
-
-> ⚠️ If the authors didn’t mention it, think critically — **no model is perfect**.
-
----
-
-## 💡 6. Key Takeaways (Do this last)  
-Summarize the whole paper into 3 short bullets:
-- 🔹 Big idea  
-- 🔹 What makes it different  
-- 🔹 Why it matters  
+  <br>→ N/A, couldn't point out
 
 ---
 
-## 🎙️ 7. “Explain it to someone” Drill (Final checkpoint)
-**Q: What’s this paper about?**  
-→ _1-2 sentences._  
-**Q: Why is it interesting?**  
-→ _1-2 sentences._  
-**Q: How is it different from prior work?**  
-→ _1-2 sentences._
+## 💡 6. Key Takeaways  
+🔹 **Big idea**: individualized agents for each slice; online drl <br>
+🔹 **What makes it different**: ensures minimumum SLA violations <br>
+🔹 **Why it matters**: maximum resource utilization
 
-> 🔁 Repeat this from memory 2 days later. If you blank out, revisit the summary — don't reread the full paper.
-
----
-
-## 🧪 8. How (or if) I can use this (Optional — after thinking a bit)
-- Could I implement this in code?  
-- Could I apply this to my dataset/project?  
-- What toy version of this can I try?
